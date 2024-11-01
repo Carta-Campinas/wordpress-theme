@@ -1,0 +1,26 @@
+{
+    "name": "hackeamos.org/carta-campinas",
+    "description": "Cartacampinas 2025 Wordpress Theme.",
+    "type": "wordpress-theme",
+    "require": {
+        "enshrined/svg-sanitize": "^0.20.0",
+        "composer/installers": "^2.3"
+    },
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "HackeamosOrg\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hackeamos.org",
+            "email": "contato@hackeamos.org"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

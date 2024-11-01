@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'hackeamos.org/carta-campinas',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'b8a882496d5de3ec69fa675399ab893c9b5afc11',
+        'type' => 'wordpress-theme',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        'composer/installers' => array(
+            'pretty_version' => 'v2.3.0',
+            'version' => '2.3.0.0',
+            'reference' => '12fb2dfe5e16183de69e784a7b84046c43d97e8e',
+            'type' => 'composer-plugin',
+            'install_path' => __DIR__ . '/./installers',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'enshrined/svg-sanitize' => array(
+            'pretty_version' => '0.20.0',
+            'version' => '0.20.0.0',
+            'reference' => '068d9fcf912c88a0471d101d95a2caa87c50aee7',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../enshrined/svg-sanitize',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'hackeamos.org/carta-campinas' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'b8a882496d5de3ec69fa675399ab893c9b5afc11',
+            'type' => 'wordpress-theme',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);
