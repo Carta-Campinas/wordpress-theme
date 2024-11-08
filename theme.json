@@ -4,7 +4,7 @@
 			"palette": [
 				{
 					"color": "#ae1600",
-					"name": "Highlight",
+					"name": "Destaque",
 					"slug": "highlight"
 				},
 				{
@@ -13,19 +13,269 @@
 					"slug": "base"
 				},
 				{
+					"color": "#ffffff",
+					"name": "Branco",
+					"slug": "white"
+				},
+				{
 					"color": "#222222",
-					"name": "Contrast",
+					"name": "Contraste",
 					"slug": "contrast"
+				},
+				{
+					"color": "rgba(0, 0, 0, 0.25)",
+					"name": "Contraste Transparente",
+					"slug": "contrast-transp"
+				},
+				{
+					"color": "rgba(174, 22, 0, 0.25)",
+					"name": "Destaque",
+					"slug": "highlight-transp"
+				}
+			]
+		},
+		"custom": {
+			"headerLogoHeight": "60px",
+			"maxContentWidth": "1024px",
+			"newsCard": {
+				"caption": {
+					"bottom": "0",
+					"left": "0",
+					"right": "0",
+					"top": "0"
+				},
+				"radius": "20px"
+			}
+		},
+		"spacing": {
+			"margin": true
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Thin.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "100",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-ThinItalic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Light.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-LightItalic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Regular.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/Lato/Italic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Bold.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-BoldItalic.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-Black.ttf"
+							]
+						},
+						{
+							"fontFamily": "Lato",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "900",
+							"src": [
+								"file:./assets/fonts/Lato/Lato-BlackItalic.ttf"
+							]
+						}
+					],
+					"fontFamily": "Lato, sans-serif",
+					"name": "Display",
+					"slug": "display"
+				},
+				{
+					"fontFamily": "Solway, serif",
+					"name": "Content",
+					"slug": "content"
+				}
+			],
+			"fontSizes": [
+				{
+					"fluid": {
+						"max": "10px",
+						"min": "9px"
+					},
+					"name": "Pequeno",
+					"size": "0.5rem",
+					"slug": "small"
+				},
+				{
+					"fluid": {
+						"max": "18px",
+						"min": "11px"
+					},
+					"name": "Médio",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"fluid": {
+						"max": "32px",
+						"min": "23px"
+					},
+					"name": "Large",
+					"size": "2rem",
+					"slug": "large"
+				},
+				{
+					"fluid": {
+						"max": "33px",
+						"min": "48px"
+					},
+					"name": "Extra Large",
+					"size": "3.5rem",
+					"slug": "extra-large"
 				}
 			]
 		}
 	},
 	"styles": {
+		"blocks": {
+			"core/group": {
+				"css": "&.news-caption {position: absolute;} &.news-caption,.news-section {padding: calc(var(--wp--custom--news-card--radius));} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;}"
+			},
+			"core/navigation": {
+				"css": "& > .wp-block-navigation__responsive-container {width: 350px; left: auto; right: 0; padding: 0.4em !important;}"
+			},
+			"core/post-featured-image": {
+				"css": ".news-item & img {height: 100%;} .news-item & {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;}"
+			},
+			"core/post-template": {
+				"css": ".news-list & {height: 100%; display: flex; flex-direction: column; justify-content: space-between;}"
+			},
+			"core/post-terms": {
+				"css": "&.news-suite {font-size: var(--wp--preset--font-size--small); padding: 0.1em 0.2em; border-radius: 0.2em; width: fit-content; margin-left: 0 !important; margin-right: 0 !important;} &.news-list.suite-left {align-self: left;} &.news-list.suite-right {align-self: rignt;} &.news-list.suite-center {align-self: center;} "
+			},
+			"core/post-title": {
+				"css": "&.news-heading {margin-top: 0.1em; text-shadow: 0 0 0.25em #000000;}"
+			},
+			"core/query": {
+				"css": "&.news-list {height: 100%; overflow: hidden;} &.news-list.caption-top .news-caption {top: var(--wp--custom--news-card--caption--top);} &.news-list.caption-right .news-caption {right: var(--wp--custom--news-card--caption--right);} &.news-list.caption-bottom .news-caption {bottom: var(--wp--custom--news-card--caption--bottom);} &.news-list.caption-left .news-caption {left: var(--wp--custom--news-card--caption--left);} &.news-list.caption-wide .news-caption {width: 100%;}"
+			},
+			"core/site-logo": {
+				"css": "header & img {max-height: var(--wp--custom--header-logo-height);}"
+			},
+			"core/social-links": {
+				"css": "&.header-social-menu {padding-left: 10px;}"
+			}
+		},
 		"color": {
 			"background": "var(--wp--preset--color--base)",
 			"text": "var(--wp--preset--color--contrast)"
-		}
+		},
+		"css": "header {margin-bottom: 1rem;} .main-content > *:not(.wide), .main-content > .wide > * {width: calc(100% - 20px); max-width: var(--wp--custom--max-content-width); margin: 0 auto;} @media screen and (max-width: 600px) { .hide-on-mobile { display: none !important; } }",
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--display)"
+				}
+			},
+			"link": {
+				"typography": {
+					"textDecoration": "none"
+				}
+			}
+		},
+		"spacing": {
+			"blockGap": "0rem"
+		},
+		"typography": []
 	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Cabeçalho"
+		},
+		{
+			"area": "uncategorized",
+			"name": "content-home",
+			"title": "Conteúdo da Home"
+		},
+		{
+			"area": "uncategorized",
+			"name": "content-single",
+			"title": "Conteúdo de Artigo"
+		},
+		{
+			"area": "uncategorized",
+			"name": "content-index",
+			"title": "Lista de Conteúdos"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Rodapé"
+		}
+	],
 	"version": 3,
 	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
 }
