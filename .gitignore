@@ -1,0 +1,9 @@
+# do not index local settings
+docker-compose.y*ml
+
+# ignore system files
+.DS_Store
+
+# do not bother adding index.php from wp-content (will be replaced)
+wp-content/themes/index.php
+wp-content/plugins/index.php
