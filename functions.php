@@ -26,7 +26,24 @@ require implode(
 );
 
 use \HackeamosOrg\HackeamosWP\MediaSizes;
+use \HackeamosOrg\HackeamosWP\DefaultSiteLogo;
+use \HackeamosOrg\HackeamosWP\DefaultFavicon;
+use \HackeamosOrg\HackeamosWP\FixThemeJsonFontSizes;
+use \HackeamosOrg\HackeamosWP\CustomBlockStyles;
 
+/**
+ * Set the logo to this theme's file when no option is available
+ */
+DefaultSiteLogo::setDefaultLogoUrl(
+    get_theme_file_uri('assets/images/logo.svg')
+);
+
+/**
+ * Set the favicon from theme assets if none is found at database
+ */
+DefaultFavicon::setDefaultFaviconUrl(
+    get_theme_file_uri('assets/images/favicon.png')
+);
 
 /**
  * Set site's media sizes
@@ -59,9 +76,17 @@ MediaSizes::setMediaSizes(
             'crop' => true
         ],
         'post-thumbnail' => [
-            # null sizes avoid actually changing size, but this will add support to featured-images
+            /*
+             * null sizes avoid actually changing size,
+             * but this will add support to featured-images
+             */
             'size_w' => null,
             'size_h' => null
         ]
     ]
 );
+
+/**
+ * Load custom block styles
+ */
+CustomBlockStyles::enqueueStyles();
