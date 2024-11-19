@@ -30,6 +30,7 @@ use \HackeamosOrg\HackeamosWP\DefaultSiteLogo;
 use \HackeamosOrg\HackeamosWP\DefaultFavicon;
 use \HackeamosOrg\HackeamosWP\FixThemeJsonFontSizes;
 use \HackeamosOrg\HackeamosWP\CustomBlockStyles;
+use \HackeamosOrg\HackeamosWP\NewsSection;
 
 /**
  * Set the logo to this theme's file when no option is available
@@ -90,3 +91,8 @@ MediaSizes::setMediaSizes(
  * Load custom block styles
  */
 CustomBlockStyles::enqueueStyles();
+
+/**
+ * Use Sections resources
+ */
+NewsSection::init();
