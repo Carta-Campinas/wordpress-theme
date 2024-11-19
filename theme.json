@@ -200,7 +200,7 @@
 	"styles": {
 		"blocks": {
 			"core/group": {
-				"css": "&.news-caption {position: absolute;} &.news-caption,.news-section {padding: calc(var(--wp--custom--news-card--radius));} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;}"
+				"css": "&.news-caption {position: absolute;} &.news-caption,.news-section {padding: calc(var(--wp--custom--news-card--radius));} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} .news-list &.news-caption {bottom: var(--wp--custom--news-card--caption--bottom);}"
 			},
 			"core/navigation": {
 				"css": "& > .wp-block-navigation__responsive-container {width: 350px; left: auto; right: 0; padding: 0.4em !important;}"
@@ -212,7 +212,7 @@
 				"css": ".news-list & {height: 100%; display: flex; flex-direction: column; justify-content: space-between;}"
 			},
 			"core/post-terms": {
-				"css": "&.news-suite {font-size: var(--wp--preset--font-size--small); width: fit-content; margin-left: 0 !important; margin-right: 0 !important;} &.news-list.suite-left {align-self: left;} &.news-list.suite-right {align-self: rignt;} &.news-list.suite-center {align-self: center;} ",
+				"css": "&.news-suite {font-size: var(--wp--preset--font-size--small); width: fit-content; margin-left: 0 !important; margin-right: 0 !important;} &.news-list.suite-left {align-self: left;} &.news-list.suite-right {align-self: rignt;} &.news-list.suite-center {align-self: center;}",
 				"elements": {
 					"link": {
 						"color": {
@@ -225,9 +225,6 @@
 			},
 			"core/post-title": {
 				"css": "&.news-heading {margin-top: 0.1em; text-shadow: 0 0 0.25em #000000;}"
-			},
-			"core/query": {
-				"css": "&.news-list {height: 100%; overflow: hidden;} &.news-list.caption-top .news-caption {top: var(--wp--custom--news-card--caption--top);} &.news-list.caption-right .news-caption {right: var(--wp--custom--news-card--caption--right);} &.news-list.caption-bottom .news-caption {bottom: var(--wp--custom--news-card--caption--bottom);} &.news-list.caption-left .news-caption {left: var(--wp--custom--news-card--caption--left);} &.news-list.caption-wide .news-caption {width: 100%;}"
 			},
 			"core/site-logo": {
 				"css": "header & img {max-height: var(--wp--custom--header-logo-height);}"
@@ -286,5 +283,5 @@
 		}
 	],
 	"version": 3,
-	"$schema": "https://schemas.wp.org/wp/6.6/theme.json"
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
 }
