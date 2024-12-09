@@ -74,11 +74,60 @@ class SingletonPattern
      */
     public static function getInstance(): SingletonPattern
     {
+        // use class name as identifier
         $cls = static::class;
-        if (!isset(self::$instances[$cls])) {
-            self::$instances[$cls] = new static();
+        // register a single instance for each extended class
+        if (!isset(self::$_instances[$cls])) {
+            self::$_instances[$cls]=[];
         }
+        if (!isset(self::$_instances[$cls]['instance'])) {
+            self::$_instances[$cls]['instance'] = new static();
+        }
+        // return the single instance for this extended class
+        return self::$_instances[$cls]['instance'];
+    }
 
-        return self::$instances[$cls];
+    /**
+     * Convert the current class name to kebab case
+     * 
+     * @return string The class name converted to kebab case.
+     */
+    public function getClassSlug() : string
+    {
+        // use class name as identifier
+        $cls = get_class($this);
+        // register a single instance for each extended class
+        if (!isset(self::$_instances[$cls])) {
+            self::$_instances[$cls]=[];
+        }
+        // register a slugish version of 
+        if (!isset(self::$_instances[$cls]['slug'])) {
+            self::$_instances[$cls]['slug'] = _wp_to_kebab_case(
+                preg_replace('/.*\\\/', '', static::class)
+            );
+        }
+        // return class slug
+        return self::$_instances[$cls]['slug'];
+    }
+
+    /**
+     * Get the build path.
+     * 
+     * @param string[] ...$path Will be appended to resulting path
+     * 
+     * @return string
+     */
+    public function getBuildPath(...$path)
+    {
+        $buildPath=str_replace(
+            $this->getSourceDir() . DIRECTORY_SEPARATOR,
+            $this->getBuildDir() . DIRECTORY_SEPARATOR,
+            $this->getSourcePath()
+        );
+        array_unshift($path, $buildPath);
+        return implode(
+            DIRECTORY_SEPARATOR,
+            $path
+        );
     }
 }
