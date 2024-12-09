@@ -6,12 +6,12 @@
  *  is acessed)
  * PHP VERSION 8
  * 
- * @package CartaCampinas
+ * @package CartaCampinasWpTheme
  * @author  Hackeamos.Org <contato@hackeamos.org>
  * @license GPL-3 https://www.gnu.org/licenses/gpl-3.0.pt-br.html
  * @link    https://github.com/Carta-Campinas/wordpress-theme
  */
-namespace HackeamosOrg;
+namespace HackeamosOrg\CartaCampinasWpTheme;
 
 /**
  * Composer Autoload
@@ -30,7 +30,6 @@ use \HackeamosOrg\HackeamosWP\DefaultSiteLogo;
 use \HackeamosOrg\HackeamosWP\DefaultFavicon;
 use \HackeamosOrg\HackeamosWP\FixThemeJsonFontSizes;
 use \HackeamosOrg\HackeamosWP\CustomBlockStyles;
-use \HackeamosOrg\HackeamosWP\NewsSection;
 
 /**
  * Set the logo to this theme's file when no option is available
@@ -86,13 +85,3 @@ MediaSizes::setMediaSizes(
         ]
     ]
 );
-
-/**
- * Load custom block styles
- */
-CustomBlockStyles::enqueueStyles();
-
-/**
- * Use Sections resources
- */
-NewsSection::init();
