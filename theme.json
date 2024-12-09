@@ -211,6 +211,11 @@
 			"core/post-template": {
 				"css": ".news-list & {height: 100%; display: flex; flex-direction: column; justify-content: space-between;}"
 			},
+			"tijolo-org/featured-category": {
+				"color": {
+					"background": "var:preset|color|highlight"
+				}
+			},
 			"core/post-terms": {
 				"css": "&.news-suite {font-size: var(--wp--preset--font-size--small); width: fit-content; margin-left: 0 !important; margin-right: 0 !important;} &.news-list.suite-left {align-self: left;} &.news-list.suite-right {align-self: rignt;} &.news-list.suite-center {align-self: center;}",
 				"elements": {
