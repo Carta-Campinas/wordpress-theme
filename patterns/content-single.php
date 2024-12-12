@@ -1,18 +1,65 @@
 <?php
 /**
- * Title: content-post
- * Slug: carta-campinas/content-post
+ * Title: content-single
+ * Slug: carta-campinas/content-single
  * Inserter: no
  */
 ?>
-<!-- wp:post-featured-image {
-    "isLink":false,
-    "aspectRatio":"16/9"
-} /-->
-<!-- wp:post-title {
-    "textAlign":"center",
-    "level":1
-} /-->
+<!-- wp:cover {
+    "useFeaturedImage":true,
+    "dimRatio":50,
+    "overlayColor":"contrast",
+    "isUserOverlayColor":true,
+    "isDark":false,
+    "style":{
+        "elements":{
+            "link":{
+                "color":{
+                    "text":"var:preset|color|base"
+                }
+            },
+            "heading":{
+                "color":{
+                    "text":"var:preset|color|base"
+                }
+            }
+        },
+        "shadow":"var:preset|shadow|natural"
+    },
+    "textColor":"base",
+    "fontSize":"large",
+    "layout":{
+        "type":"constrained"
+    }
+} -->
+<div
+    class="
+        wp-block-cover
+        is-light
+        has-base-color
+        has-text-color
+        has-link-color
+        has-large-font-size
+    "
+    style="box-shadow:var(--wp--preset--shadow--natural)"
+>
+    <span
+        aria-hidden="true"
+        class="
+            wp-block-cover__background
+            has-contrast-background-color
+            has-background-dim
+        "
+    >
+    </span>
+    <div class="wp-block-cover__inner-container">
+        <!-- wp:post-title {
+            "textAlign":"center",
+            "level":1
+        } /-->
+    </div>
+</div>
+<!-- /wp:cover -->
 <!-- wp:columns {
     "style":{
         "spacing":{
