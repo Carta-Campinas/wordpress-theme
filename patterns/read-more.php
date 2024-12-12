@@ -97,78 +97,7 @@
                 "columnCount":4
             }
         } -->
-
-            <!-- wp:group {
-                "tagName":"article",
-                "metadata":{
-                    "categories":["News"],
-                    "patternName":"carta-campinas/news-item",
-                    "name":"News Item"
-                },
-                "className":"news-item",
-                "fontSize":"medium",
-                "layout":{
-                    "type":"constrained"
-                }
-            } -->
-
-            <article class="wp-block-group news-item has-medium-font-size">
-                
-                <!-- wp:post-featured-image {
-                    "isLink":true,
-                    "aspectRatio":"4/3"
-                } /-->
-
-                <!-- wp:group {
-                    "className":"news-caption",
-                    "style":{
-                        "elements":{
-                            "link":{
-                                "color":{
-                                    "text":"var:preset|color|white"
-                                }
-                            }
-                        }
-                    },
-                    "backgroundColor":"contrast-transp",
-                    "textColor":"white",
-                    "fontFamily":"display",
-                    "layout":{
-                        "type":"constrained",
-                        "wideSize":"",
-                        "contentSize":""
-                    }
-                } -->
-                <div
-                    class="
-                        wp-block-group
-                        news-caption
-                        has-white-color
-                        has-contrast-transp-background-color
-                        has-text-color
-                        has-background
-                        has-link-color
-                        has-display-font-family
-                    "
-                >
-                        <!-- wp:tijolo-org/featured-category {
-                            "style":{
-                                "typography":{
-                                    "textAlign":"left"
-                                }
-                            },
-                            "fontSize":"small"
-                        } /-->
-
-                        <!-- wp:post-title {
-                            "level":5,
-                            "isLink":true,
-                            "className":"news-heading"
-                        } /-->
-                </div>
-                <!-- /wp:group -->
-            </article>
-            <!-- /wp:group -->
+            <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-16-9-h5"} /-->
         <!-- /wp:post-template -->
         <!-- wp:query-no-results -->
             <!-- wp:paragraph {
