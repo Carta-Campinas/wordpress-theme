@@ -200,13 +200,10 @@
 	"styles": {
 		"blocks": {
 			"core/group": {
-				"css": "&.news-caption {position: absolute;} &.news-caption,.news-section {padding: calc(var(--wp--custom--news-card--radius));} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} .news-list &.news-caption {bottom: var(--wp--custom--news-card--caption--bottom);}"
+				"css": "& news-container {position: relative;} &.news-caption {position: absolute;} &.news-caption,.news-section {padding: var(--wp--custom--news-card--radius);} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} .news-list &.news-caption {bottom: var(--wp--custom--news-card--caption--bottom);} &.news-item.cover .wp-block-post-featured-image img {height: 100%;} &.news-item .wp-block-post-featured-image {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} &.news-item.image-top .wp-block-post-featured-image {margin-bottom: 0;} &.news-item.image-top .wp-block-post-title {margin-top: 0.25rem;} &.news-item.image-top .wp-block-tijolo-org-featured-category {position: absolute; bottom: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-left {left: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-right {right: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-center {left: 50%; transform: translateX(-50%);} "
 			},
 			"core/navigation": {
 				"css": "& > .wp-block-navigation__responsive-container {width: 350px; left: auto; right: 0; padding: 0.4em !important;}"
-			},
-			"core/post-featured-image": {
-				"css": ".news-item & img {height: 100%;} .news-item & {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;}"
 			},
 			"core/post-template": {
 				"css": ".news-list & {height: 100%; display: flex; flex-direction: column; justify-content: space-between;}"
@@ -234,8 +231,12 @@
 			},
 			"tijolo-org/featured-category": {
 				"color": {
-					"background": "var(--wp--preset--color--highlight)"
-				}
+					"background": "var:preset|color|highlight"
+				},
+				"typography": {
+					"fontFamily": "var:preset|font-family|display"
+				},
+				"css": "& + .wp-block-post-title {margin-top: 0;}"
 			}
 		},
 		"color": {
@@ -250,6 +251,9 @@
 				}
 			},
 			"link": {
+				"color": {
+					"text": "inherit"
+				},
 				"typography": {
 					"textDecoration": "none"
 				}
