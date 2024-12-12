@@ -28,7 +28,22 @@
                 "sticky":"",
                 "inherit":false,
                 "taxQuery": {
-                    "categories": ["manchete"]
+                    "category": [<?php
+                    echo implode(
+                        ', ',
+                        array_map(
+                            function ($item) {
+                                return $item->term_id;
+                            },
+                            get_categories(
+                                [
+                                    'name' => [
+                                        'manchete'
+                                    ]
+                                ]
+                            )
+                        )
+                    );?>]
                 }
             },
             "metadata":{
@@ -66,7 +81,22 @@
                 "sticky":"exclude",
                 "inherit":false,
                 "taxQuery": {
-                    "categories": ["manchete"]
+                    "category": [<?php
+                    echo implode(
+                        ', ',
+                        array_map(
+                            function ($item) {
+                                return $item->term_id;
+                            },
+                            get_categories(
+                                [
+                                    'name' => [
+                                        'manchete'
+                                    ]
+                                ]
+                            )
+                        )
+                    );?>]
                 }
             },
             "metadata":{
@@ -138,7 +168,23 @@
                 "sticky":"exclude",
                 "inherit":false,
                 "taxQuery": {
-                    "categories": ["cultura"]
+                    "category": [<?php
+                    echo implode(
+                        ', ',
+                        array_map(
+                            function ($item) {
+                                return $item->term_id;
+                            },
+                            get_categories(
+                                [
+                                    'name' => [
+                                        'cultura',
+                                        'artes'
+                                    ]
+                                ]
+                            )
+                        )
+                    );?>]
                 }
             },
             "metadata":{
@@ -179,7 +225,10 @@
         "search":"",
         "exclude":[],
         "sticky":"exclude",
-        "inherit":false
+        "inherit":false,
+        "taxQuery": {
+            "categories": ["cultura"]
+        }
     },
     "metadata":{
         "categories":["news"],

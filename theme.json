@@ -187,12 +187,21 @@
 				},
 				{
 					"fluid": {
-						"max": "33px",
-						"min": "48px"
+						"max": "48px",
+						"min": "33px"
 					},
 					"name": "Extra Large",
 					"size": "3.5rem",
 					"slug": "extra-large"
+				},
+				{
+					"fluid": {
+						"max": "72px",
+						"min": "49px"
+					},
+					"name": "Huge",
+					"size": "5rem",
+					"slug": "huge"
 				}
 			]
 		}
@@ -216,7 +225,10 @@
 							"background": "var(--wp--preset--color--highlight)",
 							"text": "var(--wp--preset--color--base)"
 						},
-						"css": ".pills & {display: inline-block; padding: 0.1em 0.2em; border-radius: 0.2em; margin: 0.1em;}"
+						"typography": {
+							"fontFamily": "var(--wp--preset--font-family--display)"
+						},
+						"css": "& {display: inline-block; padding: 0.1em 0.2em; border-radius: 0.2em; margin: 0.1em;}"
 					}
 				}
 			},
@@ -231,12 +243,12 @@
 			},
 			"tijolo-org/featured-category": {
 				"color": {
-					"background": "var:preset|color|highlight"
+					"background": "var(--wp--preset--color--highlight)"
 				},
+				"css": "& + .wp-block-post-title {margin-top: 0;}",
 				"typography": {
-					"fontFamily": "var:preset|font-family|display"
-				},
-				"css": "& + .wp-block-post-title {margin-top: 0;}"
+					"fontFamily": "var(--wp--preset--font-family--display)"
+				}
 			}
 		},
 		"color": {
@@ -247,7 +259,12 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--display)"
+					"fontFamily": "var:preset|font-family|display"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var:preset|font-size|huge"
 				}
 			},
 			"link": {
