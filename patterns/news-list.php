@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: News List
+ * Title: Antigo News List
  * Slug: carta-campinas/news-list
  * Categories: News
  */
