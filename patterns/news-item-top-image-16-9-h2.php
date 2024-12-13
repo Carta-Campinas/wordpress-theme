@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: News Item with Image at Top 16:9 (H2)
+ * Title: 16:9 (H2) News Item with Image at Top
  * Slug: carta-campinas/news-item-top-image-16-9-h2
  * Categories: News
  */
@@ -10,7 +10,7 @@
     "metadata":{
         "categories":["News"],
         "patternName":"carta-campinas/news-item-top-image-16-9-h2",
-        "name":"News Item with Image at Top 16:9 (H2)"
+        "name":"16:9 (H2) News Item with Image at Top"
     },
     "className":"news-item image-top",
     "layout":{

@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: News Item with Image Cover 16:9 (H5)
+ * Title: 16:9 (H5) News Item with Image Cover
  * Slug: carta-campinas/news-item-cover-image-16-9-h5
  * Categories: News
  */
