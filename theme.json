@@ -160,8 +160,8 @@
 			"fontSizes": [
 				{
 					"fluid": {
-						"max": "12px",
-						"min": "9px"
+						"min": "10px",
+						"max": "14px"
 					},
 					"name": "Pequeno",
 					"size": "0.5rem",
@@ -169,37 +169,37 @@
 				},
 				{
 					"fluid": {
-						"max": "18px",
-						"min": "11px"
+						"min": "15px",
+						"max": "18px"
 					},
 					"name": "Médio",
-					"size": "1rem",
+					"size": "0.75rem",
 					"slug": "medium"
 				},
 				{
 					"fluid": {
-						"max": "32px",
-						"min": "23px"
+						"min": "19px",
+						"max": "25px"
 					},
-					"name": "Large",
+					"name": "Grande",
 					"size": "2rem",
 					"slug": "large"
 				},
 				{
 					"fluid": {
-						"max": "48px",
-						"min": "33px"
+						"min": "26px",
+						"max": "42px"
 					},
-					"name": "Extra Large",
+					"name": "Extra Grande",
 					"size": "3.5rem",
 					"slug": "extra-large"
 				},
 				{
 					"fluid": {
-						"max": "72px",
-						"min": "49px"
+						"min": "41px",
+						"max": "53px"
 					},
-					"name": "Huge",
+					"name": "Gigante",
 					"size": "5rem",
 					"slug": "huge"
 				}
@@ -266,6 +266,32 @@
 				"typography": {
 					"fontSize": "var:preset|font-size|huge"
 				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var:preset|font-size|extra-large"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var:preset|font-size|large"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var:preset|font-size|medium"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontSize": "var:preset|font-size|small"
+				},
+				"css": "& {text-transform: uppercase;}"
 			},
 			"link": {
 				"color": {
