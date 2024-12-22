@@ -24,16 +24,16 @@
 				},
 				{
 					"color": "rgba(174, 22, 0, 0.25)",
-					"name": "Destaque",
+					"name": "Destaque Transparente",
 					"slug": "highlight-transp"
 				},
 				{
-					"color": "#ffffff",
+					"color": "#FFFFFF",
 					"name": "Branco",
 					"slug": "white"
 				},
 				{
-					"color": "#ae1600",
+					"color": "#AE1800",
 					"name": "Vermelho",
 					"slug": "red"
 				},
@@ -43,27 +43,27 @@
 					"slug": "off-white"
 				},
 				{
-					"color": "#EFCA00",
+					"color": "#EBC63E",
 					"name": "Amarelo",
 					"slug": "yellow"
 				},
 				{
-					"color": "#6D8000",
+					"color": "#00601D",
 					"name": "Verde",
 					"slug": "green"
 				},
 				{
-					"color": "#73007D",
-					"name": "Roxo",
-					"slug": "purple"
+					"color": "#004515",
+					"name": "Verde Escuro",
+					"slug": "dark-green"
 				},
 				{
-					"color": "#10005B",
-					"name": "Azul",
-					"slug": "blue"
+					"color": "#C96326",
+					"name": "Laranja",
+					"slug": "orange"
 				},
 				{
-					"color": "#883400",
+					"color": "#85410F",
 					"name": "Marrom",
 					"slug": "brown"
 				}

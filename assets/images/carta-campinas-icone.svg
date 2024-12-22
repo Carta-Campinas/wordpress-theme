@@ -1,0 +1,18 @@
+<svg width="1002" xmlns="http://www.w3.org/2000/svg" height="1034" id="screenshot-bb18d3bd-f25d-805b-8005-32deb30d02b9" viewBox="-28 -28 1002 1034" fill="none" version="1.1"><style>/* latin-ext */
+@font-face {
+  font-family: &apos;Engagement&apos;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/engagement/v27/x3dlckLDZbqa7RUs9MFVbNMmshbs.woff2) format(&apos;woff2&apos;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &apos;Engagement&apos;;
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://design.penpot.app/internal/gfonts/font/engagement/v27/x3dlckLDZbqa7RUs9MFVbN0msg.woff2) format(&apos;woff2&apos;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}</style><g id="shape-bb18d3bd-f25d-805b-8005-32deb30d02b9"><defs><filter id="filter-render-1" x="-.031" y="-.03" width="1.094" height="1.091" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="10" dy="10"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/><feBlend in2="BackgroundImageFix" result="filter_bb18d3bd-f25d-805b-8005-32e110f9c2ec"/><feBlend in="SourceGraphic" in2="filter_bb18d3bd-f25d-805b-8005-32e110f9c2ec" result="shape"/></filter><filter id="filter-shadow-render-1" x="-.031" y="-.03" width="1.094" height="1.091" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset dx="10" dy="10"/><feGaussianBlur stdDeviation="2"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.4 0"/><feBlend in2="BackgroundImageFix" result="filter_bb18d3bd-f25d-805b-8005-32e110f9c2ec"/><feBlend in="SourceGraphic" in2="filter_bb18d3bd-f25d-805b-8005-32e110f9c2ec" result="shape"/></filter></defs><g class="text-container" transform="matrix(1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000)" filter="url(#filter-render-1)"><defs><pattern patternUnits="userSpaceOnUse" x="0" y="0" width="889.133" height="948" id="fill-0-render-1-0"><rect width="889.133" height="948" style="fill: rgb(174, 24, 0); fill-opacity: 1;"/></pattern></defs><text y="934.8" dominant-baseline="ideographic" textLength="889.133" lengthAdjust="spacingAndGlyphs" style="text-transform: none; font-family: Engagement; letter-spacing: normal; font-style: normal; font-weight: 400; white-space: pre; font-size: 768px; text-decoration: rgb(174, 24, 0); direction: ltr; fill: rgb(174, 24, 0); fill-opacity: 1;" class="fills" id="fills-bb18d3bd-f25d-805b-8005-32deb30d02b9">CP</text></g></g></svg>
