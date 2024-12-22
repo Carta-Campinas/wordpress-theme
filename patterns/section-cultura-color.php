@@ -13,7 +13,7 @@
         "name":"Section Cultura (color)"
     },
     "className":"section-cultura",
-    "backgroundColor":"highlight",
+    "backgroundColor":"red",
     "layout":{
         "type":"constrained"
     },
@@ -35,7 +35,7 @@
         section-cultura
         wide
         has-background
-        has-highlight-background-color
+        has-red-background-color
     "
     style="
         padding: var(--wp--custom--news-card--radius);
@@ -115,7 +115,7 @@
             }
         } -->
 
-        <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-4-3-h4"} /-->
+        <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-16-9-h4"} /-->
 
         <!-- /wp:post-template -->
 

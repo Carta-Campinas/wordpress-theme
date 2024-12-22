@@ -112,7 +112,7 @@
             }
         } -->
 
-        <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-4-3-h5"} /-->
+        <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-16-9-h4"} /-->
 
         <!-- /wp:post-template -->
 

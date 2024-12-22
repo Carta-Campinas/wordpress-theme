@@ -13,7 +13,7 @@
         "name":"Section Saber & Saúde (color)"
     },
     "className":"section-saberesaude",
-    "backgroundColor":"luminous-vivid-amber",
+    "backgroundColor":"yellow",
     "layout":{
         "type":"constrained"
     },
@@ -35,7 +35,7 @@
         section-saberesaude
         wide
         has-background
-        has-luminous-vivid-amber-background-color
+        has-yellow-background-color
     "
     style="
         padding: var(--wp--custom--news-card--radius);

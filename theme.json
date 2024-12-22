@@ -13,11 +13,6 @@
 					"slug": "base"
 				},
 				{
-					"color": "#ffffff",
-					"name": "Branco",
-					"slug": "white"
-				},
-				{
 					"color": "#222222",
 					"name": "Contraste",
 					"slug": "contrast"
@@ -31,6 +26,46 @@
 					"color": "rgba(174, 22, 0, 0.25)",
 					"name": "Destaque",
 					"slug": "highlight-transp"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Branco",
+					"slug": "white"
+				},
+				{
+					"color": "#ae1600",
+					"name": "Vermelho",
+					"slug": "red"
+				},
+				{
+					"color": "#fffff8",
+					"name": "Quase Branco",
+					"slug": "off-white"
+				},
+				{
+					"color": "#EFCA00",
+					"name": "Amarelo",
+					"slug": "yellow"
+				},
+				{
+					"color": "#6D8000",
+					"name": "Verde",
+					"slug": "green"
+				},
+				{
+					"color": "#73007D",
+					"name": "Roxo",
+					"slug": "purple"
+				},
+				{
+					"color": "#10005B",
+					"name": "Azul",
+					"slug": "blue"
+				},
+				{
+					"color": "#883400",
+					"name": "Marrom",
+					"slug": "brown"
 				}
 			]
 		},

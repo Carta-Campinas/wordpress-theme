@@ -69,7 +69,7 @@
         <!-- wp:query {
             "queryId":55,
             "query":{
-                "perPage":"4",
+                "perPage":"2",
                 "pages":0,
                 "offset":"1",
                 "postType":"post",
@@ -108,7 +108,7 @@
         } -->
         <div class="wp-block-query news-list caption-wide caption-bottom">
             <!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
-                <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-4-3-h5"} /-->
+                <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-16-9-h5"} /-->
             <!-- /wp:post-template -->
             <!-- wp:query-no-results -->
                 <!-- wp:paragraph {
@@ -142,5 +142,9 @@
 <!-- /wp:columns -->
 
 <!-- wp:pattern {"slug":"carta-campinas/section-saberesaude-color"} /-->
+
+<!-- wp:pattern {"slug":"carta-campinas/section-cartacampinastv"} /-->
+
+<!-- wp:pattern {"slug":"carta-campinas/section-espacoeambiente-color"} /-->
 
 <!-- wp:pattern {"slug":"carta-campinas/section-ultimas"} /-->
