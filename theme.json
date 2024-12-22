@@ -284,6 +284,9 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--display)"
 				}
+			},
+			"hackeamos-org/hackeamos-video-list": {
+				"css": "& .video-list-player {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;}"
 			}
 		},
 		"color": {
