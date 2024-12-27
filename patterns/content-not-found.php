@@ -53,7 +53,7 @@
         >
             <!-- wp:heading {"level":1,"fontSize":"extra-large"} -->
             <h1 class="wp-block-heading has-extra-large-font-size">
-                <?php esc_html_e('Not Found', 'carta-campinas');?>
+                <?php esc_html_e('Conteúdo não encontrado', 'carta-campinas');?>
             </h1>
             <!-- /wp:heading -->
         </div>
@@ -104,7 +104,7 @@
         >
             <?php
             esc_html_e(
-                'O conteúdo solicitado não pode ser encontrado.',
+                'Talvez haja algo de errado no link que você seguiu até aqui.',
                 'carta-campinas'
             );
             ?>
@@ -149,3 +149,5 @@
     <!-- /wp:column -->
 </div>
 <!-- /wp:columns -->
+
+<!-- wp:pattern {"slug":"carta-campinas/section-read-more"} /-->

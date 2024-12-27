@@ -64,7 +64,7 @@
     <!-- wp:query {
         "queryId":55,
         "query":{
-            "perPage":6,
+            "perPage":12,
             "pages":0,
             "offset":"0",
             "postType":"post",
@@ -89,61 +89,12 @@
             "fontSize":"small",
             "layout":{
                 "type":"grid",
-                "columnCount":3,
+                "columnCount":2,
                 "minimumColumnWidth":null
             }
         } -->
 
-        <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-4-3-h5"} /-->
-
-        <!-- /wp:post-template -->
-
-        <!-- wp:query-no-results -->
-    
-        <!-- wp:paragraph {
-            "placeholder":"Adicione texto ou blocos que serão exibidos quando uma consulta não retornar resultados."
-        } -->
-        <p></p>
-        <!-- /wp:paragraph -->
-    
-        <!-- /wp:query-no-results -->
-    </div>
-    <!-- /wp:query -->
-
-    <!-- wp:query {
-        "queryId":55,
-        "query":{
-            "perPage":4,
-            "pages":0,
-            "offset":"6",
-            "postType":"post",
-            "order":"desc",
-            "orderBy":"date",
-            "author":"",
-            "search":"",
-            "exclude":[],
-            "sticky":"exclude",
-            "inherit":false,
-            "taxQuery": {}
-        },
-        "metadata":{
-            "categories":["news"],
-            "patternName":"core/block/129209",
-            "name":"News List"
-        },
-        "className":"news-list caption-wide caption-bottom"
-    } -->
-    <div class="wp-block-query news-list caption-wide caption-bottom">
-        <!-- wp:post-template {
-            "fontSize":"small",
-            "layout":{
-                "type":"grid",
-                "columnCount":4,
-                "minimumColumnWidth":null
-            }
-        } -->
-
-        <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-4-3-h5"} /-->
+        <!-- wp:pattern {"slug":"carta-campinas/news-item-title-only-h3"} /-->
 
         <!-- /wp:post-template -->
 

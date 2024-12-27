@@ -12,7 +12,7 @@
         "patternName":"carta-campinas/section-read-more",
         "name":"Read More"
     },
-    "className":"news-section wide",
+    "className":"news-section",
     "backgroundColor":"base",
     "layout":{
         "type":"constrained"
@@ -22,7 +22,6 @@
     class="
         wp-block-group
         news-section
-        wide
         has-base-background-color
         has-background
     "
@@ -104,5 +103,6 @@
         <!-- /wp:query-no-results -->
     </div>
     <!-- /wp:query -->
+
 </section>
 <!-- /wp:group -->

@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: 16:9 (H3) News Item with Image Cover
- * Slug: carta-campinas/news-item-cover-image-16-9-h3
+ * Title: 16:9 (H1) Post Header with no Image on title
+ * Slug: carta-campinas/post-header-no-image
  * Categories: News
  */
 ?>
@@ -9,7 +9,7 @@
     "tagName":"article",
     "metadata":{
         "categories":["News"],
-        "patternName":"carta-campinas/news-item",
+        "patternName":"carta-campinas/post-header-no-image",
         "name":"News Item"
     },
     "className":"news-item image-top",
@@ -26,25 +26,17 @@
         }
     } -->
     <div class="wp-block-group news-container">
-    
-        <!-- wp:post-featured-image {
-            "isLink":true,
-            "aspectRatio":"16/9"
-        } /-->
-
-
-        <!-- wp:tijolo-org/featured-category {
+        <!-- core/categories {
             "style":{
                 "typography":{
                     "textAlign":"left"
                 }
-            },
-            "fontSize":"small"
+            }
         } /-->
     </div>
     <!-- /wp:group -->
     <!-- wp:post-title {
-        "level":3,
+        "level":1,
         "isLink":true
     } /-->
 </article>

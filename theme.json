@@ -244,7 +244,7 @@
 	"styles": {
 		"blocks": {
 			"core/group": {
-				"css": "& news-container {position: relative;} &.news-caption {position: absolute;} &.news-caption,.news-section {padding: var(--wp--custom--news-card--radius);} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} .news-list &.news-caption {bottom: var(--wp--custom--news-card--caption--bottom);} &.news-item.cover .wp-block-post-featured-image img {height: 100%;} &.news-item .wp-block-post-featured-image {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} &.news-item.image-top .wp-block-post-featured-image {margin-bottom: 0;} &.news-item.image-top .wp-block-post-title {margin-top: 0.25rem;} &.news-item.image-top .wp-block-tijolo-org-featured-category {position: absolute; bottom: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-left {left: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-right {right: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-center {left: 50%; transform: translateX(-50%);} "
+				"css": "& news-container {position: relative;} &.news-caption {position: absolute;} &.news-caption,.news-section {padding: var(--wp--custom--news-card--radius);} &.news-caption,.news-section:not(.wide) {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} &.news-caption {bottom: var(--wp--custom--news-card--caption--bottom);} &.news-item.cover .wp-block-post-featured-image img {height: 100%;} &.news-item .wp-block-post-featured-image {border-radius: var(--wp--custom--news-card--radius); overflow: hidden;} &.news-item.image-top .wp-block-post-featured-image {margin-bottom: 0;} &.news-item.image-top .wp-block-post-title {margin-top: 0.25rem;} &.news-item.image-top .wp-block-tijolo-org-featured-category {position: absolute; bottom: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-left {left: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-right {right: var(--wp--custom--news-card--radius);} &.news-item.image-top .wp-block-tijolo-org-featured-category.has-text-align-center {left: 50%; transform: translateX(-50%);} "
 			},
 			"core/navigation": {
 				"css": "& > .wp-block-navigation__responsive-container {width: 350px; left: auto; right: 0; padding: 0.4em !important;}"
@@ -372,6 +372,49 @@
 			"title": "Rodapé"
 		}
 	],
-	"version": 3,
+    "templateParts": [
+        {
+            "name": "header",
+            "title": "Cabeçalho",
+            "area": "header"
+        },
+        {
+            "name": "footer",
+            "title": "Rodapé",
+            "area": "footer"
+        },
+        {
+            "name": "content-post-banner",
+            "title": "Conteúdo (Imagem sobre o Título)",
+            "area": "uncategorized"
+        }
+    ],
+    "customTemplates": [
+        {
+            "name": "post-title-only",
+            "title": "Post título no cabeçalho",
+            "postTypes": [
+                "page",
+                "post"
+            ]
+        },
+        {
+            "name": "post-banner",
+            "title": "Post com imagem sobre o título",
+            "postTypes": [
+                "page",
+                "post"
+            ]
+        },
+        {
+            "name": "post-cover",
+            "title": "Post com capa no capeçalho",
+            "postTypes": [
+                "page",
+                "post"
+            ]
+        }
+    ],
+    "version": 3,
 	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
 }

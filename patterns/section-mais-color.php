@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Section Espaço e Ambiente (Color)
- * Slug: carta-campinas/section-espacoeambiente-color
+ * Title: Section Muito Mais (Color)
+ * Slug: carta-campinas/section-mais-color
  * Categories: News
  */
 ?>
@@ -9,11 +9,11 @@
     "tagName":"section",
     "metadata":{
         "categories":["News"],
-        "patternName":"carta-campinas/section-espacoeambiente-color",
-        "name":"Section Espaço e Ambiente (color)"
+        "patternName":"carta-campinas/section-mais-color",
+        "name":"Section Saber & Saúde (color)"
     },
-    "className":"section-espacoeambiente",
-    "backgroundColor":"green",
+    "className":"section-mais",
+    "backgroundColor":"yellow",
     "layout":{
         "type":"constrained"
     },
@@ -32,10 +32,10 @@
 <section
     class="
         wp-block-group
-        section-espacoeambiente
+        section-mais
         wide
         has-background
-        has-green-background-color
+        has-yellow-background-color
     "
     style="
         padding: var(--wp--custom--news-card--radius);
@@ -47,7 +47,7 @@
 
     <!-- wp:heading {
         "level":2,
-        "textColor": "base",
+        "textColor": "highlight",
         "style":{
             "spacing":{
                 "margin":{
@@ -57,10 +57,10 @@
         }
     } -->
     <h2
-        class="wp-block-heading has-text-color has-base-color"
+        class="wp-block-heading has-text-color has-highlight-color"
         style="margin-bottom:var(--wp--preset--spacing--50)"
     >
-        <?php esc_html_e('Espaço e Ambiente', 'carta-campinas');?>
+        <?php esc_html_e('Muito Mais', 'carta-campinas');?>
     </h2>
     <!-- /wp:heading -->
 
@@ -79,7 +79,7 @@
             "sticky":"exclude",
             "inherit":false,
             "taxQuery": {
-                "category": [<?php
+                "category_exclude": [<?php
                 echo implode(
                     ', ',
                     array_map(
@@ -89,7 +89,10 @@
                         get_categories(
                             [
                                 'slug' => [
-                                    'cidades-ambiente-e-espaco'
+                                    'politica',
+                                    'economia',
+                                    'economia-3',
+                                    'glaucocortez'
                                 ]
                             ]
                         )
@@ -116,16 +119,6 @@
         <!-- wp:pattern {"slug":"carta-campinas/news-item-cover-image-4-3-h5"} /-->
 
         <!-- /wp:post-template -->
-
-        <!-- wp:query-no-results -->
-    
-        <!-- wp:paragraph {
-            "placeholder":"Adicione texto ou blocos que serão exibidos quando uma consulta não retornar resultados."
-        } -->
-        <p></p>
-        <!-- /wp:paragraph -->
-    
-        <!-- /wp:query-no-results -->
     </div>
     <!-- /wp:query -->
 </section>
