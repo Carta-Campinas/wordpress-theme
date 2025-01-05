@@ -9,10 +9,10 @@
 <div class="wp-block-columns">
 
     <!-- wp:column {
-        "verticalAlignment":"bottom",
+        "verticalAlignment":"top",
         "width":"60%"
     } -->
-    <div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:60%">
+    <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:60%">
 
         <!-- wp:query {
             "queryId":55,
@@ -66,7 +66,7 @@
         <!-- wp:query {
             "queryId":55,
             "query":{
-                "perPage":"2",
+                "perPage":"4",
                 "pages":0,
                 "offset":"1",
                 "postType":"post",
@@ -115,13 +115,13 @@
     <!-- /wp:column -->
 
     <!-- wp:column {
-        "verticalAlignment":"bottom",
+        "verticalAlignment":"top",
         "width":"40%"
     } -->
     <div
         class="
             wp-block-column
-            is-vertically-aligned-bottom
+            is-vertically-aligned-top
         "
         style="flex-basis:40%;"
     >

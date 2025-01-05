@@ -22,10 +22,7 @@
             "padding":"var(--wp--custom--news-card--radius)"
         },
         "border":{
-            "radius":{
-                "topLeft": "var(--wp--custom--news-card--radius)",
-                "topRight": "var(--wp--custom--news-card--radius)"
-            }
+            "radius":"var(--wp--custom--news-card--radius)"
         }
     }
 } -->
@@ -39,8 +36,7 @@
     "
     style="
         padding: var(--wp--custom--news-card--radius);
-        border-top-left-radius: var(--wp--custom--news-card--radius);
-        border-top-right-radius: var(--wp--custom--news-card--radius);
+        border-radius: var(--wp--custom--news-card--radius);
     "
     >
 
