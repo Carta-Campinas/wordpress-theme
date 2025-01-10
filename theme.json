@@ -66,6 +66,11 @@
 					"color": "#85410F",
 					"name": "Marrom",
 					"slug": "brown"
+				},
+				{
+					"color": "#004080",
+					"name": "Azul",
+					"slug": "blue"
 				}
 			]
 		},
@@ -269,6 +274,18 @@
 			},
 			"core/post-title": {
 				"css": "&.news-heading {margin: 0.1em 0; text-shadow: 0 0 0.25em #000000;}"
+			},
+			"core/post-content": {
+				"elements": {
+					"link": {
+						"color": {
+							"text": "var:preset|color|blue"
+						},
+						"typography": {
+							"textDecoration": "underline"
+						}
+					}
+				}
 			},
 			"core/site-logo": {
 				"css": "header & img {max-height: var(--wp--custom--header-logo-height);}"
